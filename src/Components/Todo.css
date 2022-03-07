@@ -1,0 +1,16 @@
+.addItems {
+  display: flex;
+  justify-content: center;
+}
+.addItem {
+  margin-left: 20px;
+  align-self: center;
+  background: rgb(255, 66, 138);
+}
+.singleItem {
+  max-width: 20rem;
+  background: rgb(255, 66, 138);
+  margin: 0 auto;
+  padding: 15px 30px;
+  justify-content: between;
+}
