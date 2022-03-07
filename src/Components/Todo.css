@@ -1,16 +1,41 @@
-.addItems {
-  display: flex;
-  justify-content: center;
+body {
+  background: rgb(255, 66, 138) !important;
+}
+.main-div {
+  background: rgb(247, 246, 246);
+  border-radius: 20px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: -1px 5px 34px -11px rgba(0, 0, 0, 0.5);
+}
+.child-div {
+  padding: 20px 20px;
 }
 .addItem {
-  margin-left: 20px;
-  align-self: center;
-  background: rgb(255, 66, 138);
+  margin-left: 10px !important;
+  margin-top: 8px !important;
 }
 .singleItem {
-  max-width: 20rem;
-  background: rgb(255, 66, 138);
-  margin: 0 auto;
-  padding: 15px 30px;
-  justify-content: between;
+  border-radius: 10px;
+  background: rgb(228, 226, 227);
+  margin: 15px auto;
+  padding: 15px 20px;
+}
+.singleItemText {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  /* overflow: scroll; */
+  /* width: 50%; */
+}
+.singleItemText i {
+  align-self: center;
+  cursor: pointer;
+  color: brown;
+  font-size: calc(1.275rem + 0.3vw);
+}
+.singleItemText i:hover {
+  color: red;
+  transition: all 1s;
 }

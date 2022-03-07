@@ -49,10 +49,6 @@ const Todo = () => {
     <>
       <div className="main-div">
         <div className="child-div">
-          <figure>
-            <img src="" alt="" />
-          </figure>
-
           <div className="addItems">
             <TextField
               className="inputField"
@@ -70,13 +66,17 @@ const Todo = () => {
             {items.map((element: string, index: number) => {
               return (
                 <div className="singleItem " key={index}>
-                  <div className="singleItemText d-flex justify-between">
-                    <h3>{element}</h3>
-                    <i
-                      className="far fa-trash-alt"
-                      title="Delete Item"
-                      onClick={() => deleteItem(index)}
-                    ></i>
+                  <div className="singleItemText">
+                    <div>
+                      <h4>{element}</h4>
+                    </div>
+                    <div>
+                      <i
+                        className="far fa-trash-alt"
+                        title="Delete Item"
+                        onClick={() => deleteItem(index)}
+                      ></i>
+                    </div>
                   </div>
                 </div>
               );
