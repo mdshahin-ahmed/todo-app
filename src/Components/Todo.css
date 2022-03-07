@@ -4,7 +4,7 @@ body {
 .main-div {
   background: rgb(247, 246, 246);
   border-radius: 20px;
-  width: 40%;
+  max-width: 40%;
   margin: 0 auto;
   margin-top: 50px;
   box-shadow: -1px 5px 34px -11px rgba(0, 0, 0, 0.5);
@@ -15,27 +15,43 @@ body {
 .addItem {
   margin-left: 10px !important;
   margin-top: 8px !important;
+  background: rgb(255, 66, 138) !important;
 }
+.addItem:hover {
+  background: rgb(238, 11, 98) !important;
+  transition: all 0.5s;
+}
+
+.singleItem i {
+  align-self: center;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: calc(1.275rem + 0.3vw);
+}
+.singleItem i:hover {
+  color: white;
+  transition: all 0.3s;
+}
+
 .singleItem {
   border-radius: 10px;
   background: rgb(228, 226, 227);
   margin: 15px auto;
   padding: 15px 20px;
-}
-.singleItemText {
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
-  /* overflow: scroll; */
-  /* width: 50%; */
 }
-.singleItemText i {
-  align-self: center;
+.singleItem:hover {
+  background: rgb(255, 39, 147);
+  color: white;
   cursor: pointer;
-  color: brown;
-  font-size: calc(1.275rem + 0.3vw);
+  transition: all 0.5s;
 }
-.singleItemText i:hover {
-  color: red;
-  transition: all 1s;
+
+.deleteAll {
+  background: rgb(255, 66, 138) !important;
+}
+.deleteAll:hover {
+  background: rgb(238, 11, 98) !important;
+  transition: all 0.5s;
 }

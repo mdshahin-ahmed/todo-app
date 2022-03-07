@@ -62,30 +62,29 @@ const Todo = () => {
             </Button>
           </div>
 
-          <div className="showItems mt-4">
+          <div className="showItems">
             {items.map((element: string, index: number) => {
               return (
-                <div className="singleItem " key={index}>
-                  <div className="singleItemText">
-                    <div>
-                      <h4>{element}</h4>
-                    </div>
-                    <div>
-                      <i
-                        className="far fa-trash-alt"
-                        title="Delete Item"
-                        onClick={() => deleteItem(index)}
-                      ></i>
-                    </div>
-                  </div>
+                <div className="singleItem" key={index}>
+                  <h4>{element}</h4>
+
+                  <i
+                    className="far fa-trash-alt"
+                    title="Delete Item"
+                    onClick={() => deleteItem(index)}
+                  ></i>
                 </div>
               );
             })}
           </div>
 
           {/* Clear all button  */}
-          <div className="deleteAll mt-4">
-            <Button variant="contained" onClick={removeAll}>
+          <div className="mt-4">
+            <Button
+              className="deleteAll"
+              variant="contained"
+              onClick={removeAll}
+            >
               Check List
             </Button>
           </div>
